@@ -62,7 +62,7 @@ h2{
 /* For screens up to 600px width */
 @media (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
         margin: 0;
         padding: 0;
     }
@@ -78,7 +78,7 @@ h2{
     }
 
     .text {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
