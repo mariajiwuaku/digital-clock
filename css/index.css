@@ -39,7 +39,26 @@ h2{
     
 }
 
-/* Add this to your CSS file */
+
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: black;
+}
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+
 
 /* For screens up to 600px width */
 @media (max-width: 600px) {
@@ -62,15 +81,14 @@ h2{
     }
 }
 
-/* For screens between 601px and 1024px width */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* For screens above 600px width */
+@media (min-width: 601px) {
     body {
         font-size: 16px;
     }
 
     .clock {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -81,38 +99,4 @@ h2{
     .text {
         font-size: 14px;
     }
-}
-
-/* For screens above 1024px width */
-@media (min-width: 1025px) {
-    body {
-        font-size: 18px;
-    }
-
-    .clock {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-
-    .text {
-        font-size: 16px;
-    }
-}
-
-.clock .text{
-    height: 30px;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: black;
-}
-.clock #ampm {
-    bottom: 0;
-    position: absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
-    background-color: black;
-    border-radius: 8px;
 }
